@@ -1,0 +1,123 @@
+body{
+    background-color: #eee;
+    /*padding-left: calc((100vw - var(--main-width))/2);*/
+    --main-width:900px;
+    text-align: center;
+
+}
+
+.header{
+    margin-top: 20px;
+}
+
+main{
+    margin-top: 20px;
+    /*width: var(--main-width);*/
+    /*--start: hsl(0, 50%, 30%);*/
+    /*--end: hsl(300, 90%, 70%);*/
+    /*background-image: linear-gradient( 45deg, var(--start), var(--end));*/
+    background-size: contain;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.main-contents{
+    /*background-color: ;*/
+    width: 30%;
+    margin: 0 auto;
+    /*border: none solid 1px;*/
+    border-radius: 20px;
+    padding: 20px;
+
+    --start: hsl(0, 100%, 50%);
+    --end: hsl(322, 100%, 50%);
+    background-image: linear-gradient(-135deg, var(--start), var(--end));
+}
+.card-content{
+    /*background-color: dimgray;*/
+    display: inline;
+    /*width:;*/
+}
+
+.card-content .name{
+    font-weight: 600;
+    font-size: large;
+    font-family: fantasy;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.card-content .nickname{
+    font-weight: 600;
+    font-size: 60px;
+    font-family: fantasy;
+    line-height: 100px;
+}
+
+.card-content .discription{
+    color: white;
+}
+
+.profile-border{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0;
+}
+
+
+.contact{
+    text-align: center;
+
+}
+.btn{
+    margin-top: 30px;
+
+    --offset: 10px;
+    --border-size: 2px;
+
+    padding: 1.5em 3em;
+
+    border: 0;
+
+    color: #e55743;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition-duration: 3s;
+}
+
+.btn:hover{
+    background: transparent;
+    /*transition-duration: 20s;*/
+    /*width: 200px;*/
+    /*height: 100px;*/
+
+}
+
+
+.top-section {
+    width: 100%;
+    height: 768px;
+    background-color: #e74c3c;
+    animation: bg-color 10s infinite;
+    -webkit-animation: bg-color 10s infinite;
+}
+@-webkit-keyframes bg-color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
+}
+@keyframes bg-color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
+}
